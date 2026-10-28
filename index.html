@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#f8fbfb" />
+    <meta name="description" content="Plan a U.S. road trip with OneTrip. Explore as a guest, or create an account to keep your saved trips together across devices." />
+    <title>OneTrip — The world, planned around you.</title>
+    <link rel="stylesheet" href="/assets/fonts.css" />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="/home.js" defer></script>
+  <link rel="icon" type="image/png" href="/favicon.png"></head>
+  <body>
+    <a class="skip-link" href="#main" data-i18n="skip">Skip to content</a>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="/" aria-label="OneTrip home" data-i18n-aria="home"><span>One</span><span>Trip</span></a>
+        <nav class="desktop-nav" aria-label="Main navigation" data-i18n-aria="navigation">
+          <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+          <a href="/planner/" data-i18n="navPlan">Plan a trip</a>
+          <a href="#how-it-works" data-i18n="navHow">How it works</a>
+          <a href="/support/" data-i18n="navSupport">Support</a>
+          <a class="nav-signup" href="/planner/?account=signup" data-i18n="signUp">Sign up</a>
+          <a href="/planner/?account=signin" data-i18n="logIn">Log in</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-switch" role="group" aria-label="Language" data-i18n-aria="language">
+            <button type="button" lang="en" data-language="en" aria-pressed="true">English</button>
+            <span aria-hidden="true">/</span>
+            <button type="button" lang="zh-Hans" data-language="zh" aria-pressed="false">中文</button>
+          </div>
+          <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-menu" aria-label="Open menu" data-menu-toggle>
+            <svg class="menu-open-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h16" /></svg>
+            <svg class="menu-close-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="m6 6 12 12M6 18 18 6" /></svg>
+          </button>
+        </div>
+      </div>
+      <nav id="mobile-menu" class="mobile-nav" aria-label="Mobile navigation" data-i18n-aria="mobileNavigation" hidden>
+        <div class="container mobile-nav-inner">
+          <a href="#destinations" data-i18n="navDestinations">Destinations</a>
+          <a href="/planner/" data-i18n="navPlan">Plan a trip</a>
+          <a href="#how-it-works" data-i18n="navHow">How it works</a>
+          <a href="/support/" data-i18n="navSupport">Support</a>
+          <div class="mobile-account-links">
+            <a class="nav-signup" href="/planner/?account=signup" data-i18n="signUp">Sign up</a>
+            <a href="/planner/?account=signin" data-i18n="logIn">Log in</a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main id="main">
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-image" src="/assets/yellowstone.avif" alt="" fetchpriority="high" />
+        <div class="hero-shade" aria-hidden="true"></div>
+        <div class="container hero-content">
+          <p class="eyebrow" data-i18n="eyebrow">Tailor-made journeys</p>
+          <h1 id="hero-title" data-i18n="heroTitle">The world, planned around you.</h1>
+          <p class="hero-description" data-i18n="heroDescription">Your route, inspiring stops and a trip plan shaped around you.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/planner/" data-i18n="startPlanning">Start planning</a>
+            <a class="button button-secondary" href="#destinations" data-i18n="exploreDestinations">Explore destinations</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="destinations section" id="destinations" aria-labelledby="destinations-title">
+        <div class="container">
+          <div class="section-heading">
+            <h2 id="destinations-title" data-i18n="destinationsTitle">Featured escapes</h2>
+            <a class="view-all" href="/planner/"><span data-i18n="viewAll">View all</span><span aria-hidden="true"> →</span></a>
+          </div>
+          <div class="destination-grid">
+            <article class="destination-card">
+              <p class="destination-region" data-i18n="bigSurRegion">California</p>
+              <h3 data-i18n="bigSurTitle">Big Sur</h3>
+              <p class="destination-description" data-i18n="bigSurDescription">Rugged cliffs, redwood forests and Pacific views. Leave room for a slower stretch along the coast.</p>
+              <a class="text-link" href="/planner/"><span data-i18n="planBigSur">Plan a Big Sur trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" /></svg></a>
+            </article>
+            <article class="destination-card">
+              <p class="destination-region" data-i18n="grandCanyonRegion">Arizona</p>
+              <h3 data-i18n="grandCanyonTitle">Grand Canyon</h3>
+              <p class="destination-description" data-i18n="grandCanyonDescription">Layered stone, vast horizons and unforgettable viewpoints. Build a desert journey around the canyon.</p>
+              <a class="text-link" href="/planner/"><span data-i18n="planGrandCanyon">Plan a Grand Canyon trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" /></svg></a>
+            </article>
+            <article class="destination-card">
+              <p class="destination-region" data-i18n="zionRegion">Utah</p>
+              <h3 data-i18n="zionTitle">Zion</h3>
+              <p class="destination-description" data-i18n="zionDescription">Soaring sandstone walls and winding canyon trails. Find a place for Utah’s striking scenery in your plan.</p>
+              <a class="text-link" href="/planner/"><span data-i18n="planZion">Plan a Zion trip</span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M4 12h15m-6-6 6 6-6 6" /></svg></a>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="how-it-works section" id="how-it-works" aria-label="How it works" data-i18n-aria="navHow">
+        <div class="container">
+          <ol class="steps-grid">
+            <li class="step">
+              <span class="step-number" aria-hidden="true">01</span>
+              <h3 data-i18n="stepOneTitle">Choose your stops</h3>
+              <p data-i18n="stepOneDescription">Explore U.S. destinations and add the places you want to see. Start with a little inspiration or a route of your own.</p>
+            </li>
+            <li class="step">
+              <span class="step-number" aria-hidden="true">02</span>
+              <h3 data-i18n="stepTwoTitle">Shape your route</h3>
+              <p data-i18n="stepTwoDescription">Arrange your stops, choose your dates and explore illustrative lodging estimates as you put your itinerary together.</p>
+            </li>
+            <li class="step">
+              <span class="step-number" aria-hidden="true">03</span>
+              <h3 data-i18n="stepThreeTitle">Save your plan</h3>
+              <p data-i18n="stepThreeDescription">Save locally as a guest, or sign in to keep your saved plans together across devices. Bookings are made separately.</p>
+            </li>
+          </ol>
+          <div class="account-callout">
+            <div class="account-callout-copy">
+              <h2 data-i18n="accountTitle">Your plans, wherever you go.</h2>
+              <p data-i18n="accountDescription">Create an account to return to your saved trips on another device. Guest plans stay on this device until you choose to import them.</p>
+              <p class="account-language-note" data-i18n="accountLanguageNote">The trip planner and account pages are currently in English.</p>
+            </div>
+            <div class="account-callout-actions">
+              <a class="button button-secondary" href="/planner/?account=signup" data-i18n="createAccount">Create an account</a>
+              <a class="account-login" href="/planner/?account=signin" data-i18n="logIn">Log in</a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="expedia-section section" id="book-with-expedia" aria-labelledby="expedia-title">
+        <div class="container">
+          <div class="expedia-card">
+            <div class="expedia-copy">
+              <h2 id="expedia-title" data-i18n="expediaTitle">Ready for the next step?</h2>
+              <p data-i18n="expediaDescription">Search flights and stays on Expedia. Live prices, availability, reservations and payment are handled by Expedia and its travel providers.</p>
+            </div>
+            <div class="expedia-action">
+              <a class="button button-primary" href="https://expedia.com/affiliate/U6QpkfB" target="_blank" rel="noopener sponsored" aria-label="Search on Expedia (opens a new tab)" data-i18n-aria="expediaLinkLabel">
+                <span data-i18n="expediaButton">Search on Expedia</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5" /></svg>
+              </a>
+            </div>
+          </div>
+          <div class="expedia-card" id="book-with-booking">
+            <div class="expedia-copy">
+              <h2 data-i18n="bookingTitle">Hotels and flights on Booking.com.</h2>
+              <p data-i18n="bookingDescription">Find a place to stay or search flights for your next trip. Live prices, availability, reservations and payment are handled by Booking.com and its travel providers.</p>
+            </div>
+            <div class="expedia-action booking-actions">
+              <a class="button button-primary" href="https://www.anrdoezrs.net/click-101910051-17288959" target="_blank" rel="noopener sponsored" aria-label="Find hotels on Booking.com (opens a new tab)" data-i18n-aria="bookingHotelsLabel">
+                <span data-i18n="bookingHotelsButton">Find hotels</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5" /></svg>
+              </a>
+              <a class="button button-secondary" href="https://www.dpbolvw.net/click-101910051-17288982" target="_blank" rel="noopener sponsored" aria-label="Search flights on Booking.com (opens a new tab)" data-i18n-aria="bookingFlightsLabel">
+                <span data-i18n="bookingFlightsButton">Search flights</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5" /></svg>
+              </a>
+            </div>
+          </div>
+          <div class="expedia-card" id="book-with-discovercars">
+            <div class="expedia-copy">
+              <h2 data-i18n="carsTitle">A car for the open road.</h2>
+              <p data-i18n="carsDescription">Compare rental cars on DiscoverCars. Live prices, availability, reservations and payment are handled by DiscoverCars and its rental providers.</p>
+            </div>
+            <div class="expedia-action">
+              <a class="button button-primary" href="https://www.discovercars.com/?a_aid=sharonscreed" target="_blank" rel="noopener sponsored" aria-label="Find rental cars on DiscoverCars (opens a new tab)" data-i18n-aria="carsLinkLabel">
+                <span data-i18n="carsButton">Find rental cars</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true"><path d="M14 4h6v6M20 4l-9 9M10 4H5a1 1 0 0 0-1 1v14a1 1 0 0 0 1 1h14a1 1 0 0 0 1-1v-5" /></svg>
+              </a>
+            </div>
+          </div>
+          <p class="expedia-note" data-i18n="expediaNote">Provider websites open in a new tab. Your saved trip and profile details are not added to these links.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <p class="copyright" data-i18n="copyright">© 2026 OneTrip. All rights reserved.</p>
+        <nav class="footer-nav" aria-label="Footer navigation" data-i18n-aria="footerNavigation">
+          <a href="/support/" data-i18n="navSupport">Support</a>
+          <a href="/privacy/" data-i18n="privacy">Privacy</a>
+        </nav>
+      </div>
+    </footer>
+    <span class="visually-hidden" role="status" aria-live="polite" data-language-status></span>
+  </body>
+</html>

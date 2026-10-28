@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Privacy — OneTrip</title>
+  <meta name="description" content="How OneTrip handles account information, cloud-saved trips, guest plans and privacy choices.">
+  <link rel="stylesheet" href="/assets/fonts.css">
+  <link rel="stylesheet" href="/info.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+</head>
+<body>
+  <header><a class="brand" href="/">One<span>Trip</span></a><a href="/support/">Support →</a></header>
+  <main>
+    <p class="eyebrow">YOUR TRIP. YOUR INFORMATION.</p>
+    <h1>Privacy policy</h1>
+    <p><strong>Effective date:</strong> 25 October 2026<br><strong>Applies to:</strong> the OneTrip trip planner and this website, including account-enabled versions.</p>
+    <section>
+      <h2>About OneTrip</h2>
+      <p>OneTrip helps you create and save itineraries. You can plan as a guest or create an account to sync saved trips across devices using account-enabled versions of OneTrip. Older iPhone builds that do not offer Account continue to store their plans locally. OneTrip does not make reservations or collect payments.</p>
+
+      <h2>Accounts and sign-in</h2>
+      <p>We use Supabase to manage email-and-password authentication and the account database. When you create an account, your email address and password are submitted to Supabase for authentication. Your email must be verified before you sign in. Your account has a unique identifier, and you may optionally provide a display name.</p>
+      <p>Confirmation and password-reset emails are used to verify your address and help you access your account. Authentication services also process technical information needed to deliver and secure sign-in requests, such as network and device information. The app or browser stores a sign-in session on your device so you can return to your account.</p>
+
+      <p>For account confirmation and password recovery, Supabase passes the recipient email address and authentication message to Resend for delivery. Resend processes the message content, including confirmation or recovery links, and delivery metadata. These are account-access messages, separate from optional marketing preferences. OneTrip does not use this authentication email flow to read your inbox.</p>
+
+      <h2>Saved trips and device storage</h2>
+      <p>Trips can include names, dates, destinations, traveler and room counts, budgets, transport choices and illustrative lodging selections. When you save trips while signed in, OneTrip stores them in the cloud under your account, using Supabase. Account access is restricted to that account’s saved records. Device caches support using and displaying your plans locally; synchronization needs an internet connection.</p>
+      <p>Guest trips stay in the app or browser on the device where you create them. Signing in does not automatically upload them. Guest trips are copied to your account only when you explicitly choose to import them. Optional guest profile details, where available, also remain local and do not create an account.</p>
+      <p>The homepage remembers your language selection in your browser. Clearing browser storage can remove guest plans, local preferences and sign-in information. Account-saved trips remain in the cloud unless you delete those trips or your account.</p>
+
+      <h2>Email preferences</h2>
+      <p>Marketing emails are optional. The marketing checkbox is unchecked by default, and creating an account does not automatically subscribe you. We store the preference you choose. You can opt out or change it in Account at any time. Confirmation, password-reset and other emails needed to secure your account are separate from marketing preferences.</p>
+
+      <h2>Collection and sharing</h2>
+      <p>Supabase processes account and saved-trip information to provide authentication and cloud storage for OneTrip. We do not sell your personal information. OneTrip does not include advertising or third-party analytics SDKs and does not collect payment details. The iPhone app does not request access to your precise device location, contacts or camera.</p>
+
+      <p>Supabase also records authentication and security events, which can include account identifiers, sign-in or recovery actions, timestamps, IP addresses and browser or device request information. Authentication and email providers keep operational and delivery records to run, secure and troubleshoot these services. Passwords are stored by Supabase as salted hashes rather than readable passwords.</p>
+
+      <h2>Maps and the website</h2>
+      <p>The iPhone map uses Apple Maps. Loading it may send map-area and technical request data to Apple under <a href="https://www.apple.com/legal/privacy/data/en/apple-maps/">Apple’s privacy terms</a>. OneTrip does not request your current location. Map imagery may require internet access. The browser planner uses a schematic route display.</p>
+      <p>When you visit this website, the hosting service receives ordinary web requests, including your IP address and browser details, to deliver and secure the site. Images and fonts are hosted with this website.</p>
+
+      <h2>Travel affiliate links</h2><p>Booking buttons on the website and web planner open the named provider in a new tab. OneTrip is an affiliate of Expedia and DiscoverCars, and of Booking.com through CJ. OneTrip may earn a commission on eligible bookings made through these links. Not every booking is eligible. The links contain affiliate identifiers, but OneTrip does not add your saved trips, optional profile details, dates or destinations to them.</p><p>Booking.com affiliate links first pass through CJ to recognize the referral. When you follow a booking link, the affiliate network, provider and their service providers receive ordinary web request information, such as your IP address, browser details and referring website where available. They may use cookies or similar technologies to recognize referrals and attribute eligible bookings. Their websites, accounts, reservations, payments and use of information are governed by their own terms and privacy policies. Review those policies and cookie choices on the provider website before booking.</p>
+
+      <h2>Support messages and external services</h2>
+      <p>If you email support, we receive the contact information and message you send and use them to respond. Your email provider handles delivery under its own privacy practices. External websites and Apple’s TestFlight service have their own privacy policies.</p>
+
+      <h2>Editing and deleting information</h2>
+      <p>You can edit your account name and marketing preference in Account, and edit or delete saved trips in the planner. To delete your account, open <strong>Account</strong>, choose <strong>Delete account</strong>, enter your current password and confirm. Account deletion removes your OneTrip account and its cloud-saved trips.</p>
+      <p>After account deletion, the app attempts to clear cached account data on the current device. Other devices may retain locally cached copies. Signing out hides that account’s plans but can retain its local cache, including unsynced changes. To remove remaining local copies, clear the browser’s site storage or delete the app’s data on each device. Guest plans are stored separately and can be deleted on the device where they were created. Signing out or resetting guest data does not itself delete the cloud account.</p>
+      <p>Use <strong>Reset guest data</strong> in Profile, where available, to clear locally saved guest information. Clearing browser site data also removes that browser’s local copies. Deleting the iPhone app removes its active local storage; offloading it may retain data. Device backups may contain local app data according to your Apple backup settings. Clearing active app data does not remove existing device backups.</p>
+
+      <p>Deleting your OneTrip account removes its active account and cloud-trip records. Authentication, security and email-delivery logs, and provider backups, may remain under the providers’ retention and backup practices. Account deletion does not promise immediate erasure of every operational record or existing backup. Contact us for help with a deletion or retention request.</p>
+
+      <h2>Security</h2>
+      <p>OneTrip uses managed authentication, account access controls, and the storage protections provided by iOS or your browser. No storage method is perfectly secure. Do not put passwords, payment details or other sensitive information in trip names or profile fields, or send them to support.</p>
+
+      <h2>Children</h2>
+      <p>OneTrip is not directed to children, and we do not knowingly collect children’s personal information through accounts. If you believe a child has provided personal information, contact us so we can help remove it. Guest planning does not require an account.</p>
+
+      <h2>Changes and contact</h2>
+      <p>If our data practices change, we will update this policy and its effective date. For privacy questions or help with account deletion, email <a href="mailto:screed@rosesantiques.com">screed@rosesantiques.com</a>.</p>
+    </section>
+  </main>
+  <footer>© 2026 OneTrip · <a href="/">Home</a> · <a href="/support/">Support</a></footer>
+</body>
+</html>
