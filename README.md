@@ -22,4 +22,4 @@ Local preview: `python3 -m http.server 4174`.
 
 ## Planner loading
 
-The GitHub release adds font preloads and a visible loading message to the planner. The homepage hints that the planner JavaScript can be prefetched. These change startup presentation only; the published planner application bundle and Supabase connection remain unchanged.
+The GitHub release adds a visible loading message to the planner. The homepage hints that the planner JavaScript can be prefetched. The web App renders readable fallback text with `font-display: swap` while custom fonts load, instead of returning an empty page until all seven fonts finish. The change is reproduced by `python3 scripts/optimize-planner.py` against the retained original bundle. Authentication, trip storage, and the Supabase connection are unchanged.
