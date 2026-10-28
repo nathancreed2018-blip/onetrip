@@ -19,3 +19,7 @@ Supabase continues to provide authentication and cloud trip storage. This hostin
 Edit `index.html`, `home.js`, and `styles.css` for homepage wording, translation strings, and styling. Edit `support/index.html` and `privacy/index.html` for those pages. The planner is an Expo web export; update its original source and regenerate the `/planner/` export for planner changes.
 
 Local preview: `python3 -m http.server 4174`.
+
+## Planner loading
+
+The GitHub release adds font preloads and a visible loading message to the planner. The homepage hints that the planner JavaScript can be prefetched. These change startup presentation only; the published planner application bundle and Supabase connection remain unchanged.

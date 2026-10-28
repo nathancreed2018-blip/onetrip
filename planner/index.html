@@ -5,6 +5,13 @@
     <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <title>OneTrip</title>
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/fraunces/400Regular/Fraunces_400Regular.d484e2f727663ddd31e7fcebc7cc25ea.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/fraunces/500Medium/Fraunces_500Medium.d1acf82088f232372c997dbadbc3f405.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/fraunces/600SemiBold/Fraunces_600SemiBold.e995588822b0867215ce518a9a79175b.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/manrope/400Regular/Manrope_400Regular.8ca1a84037fdb644723129315c390ad9.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/manrope/500Medium/Manrope_500Medium.de7b3026c153d63d5732582887fecbf4.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/manrope/600SemiBold/Manrope_600SemiBold.80cb1b1a8ba262608706cb7f2b017835.ttf" as="font" type="font/ttf" crossorigin />
+    <link rel="preload" href="/planner/assets/__node_modules/@expo-google-fonts/manrope/700Bold/Manrope_700Bold.8e8fe178c0f147b91ed2a2b3097ad8a4.ttf" as="font" type="font/ttf" crossorigin />
     <!-- The `react-native-web` recommended style reset: https://necolas.github.io/react-native-web/docs/setup/#root-element -->
     <style id="expo-reset">
       /* These styles make the body full-height */
@@ -23,6 +30,15 @@
         flex: 1;
       }
     </style>
+    <style>
+      body { margin: 0; background: #faf7f1; }
+      #planner-loading { position: fixed; inset: 0; z-index: 10; display: grid; place-content: center; gap: 16px; padding: 24px; text-align: center; color: #573563; background: #faf7f1; font: 16px/1.5 system-ui, sans-serif; }
+      #planner-loading[hidden] { display: none; }
+      #planner-loading strong { color: #26221f; font: 32px Georgia, serif; }
+      .loading-ring { width: 28px; height: 28px; margin: 0 auto; border: 3px solid #e1d7e4; border-top-color: #754486; border-radius: 50%; animation: loading-spin 1s linear infinite; }
+      @keyframes loading-spin { to { transform: rotate(360deg); } }
+      @media (prefers-reduced-motion: reduce) { .loading-ring { animation: none; } }
+    </style>
   <link rel="icon" href="/planner/favicon.ico"/></head>
 
   <body>
@@ -30,6 +46,25 @@
     <noscript> You need to enable JavaScript to run this app. </noscript>
     <!-- The root element for your Expo app. -->
     <div id="root"></div>
+    <div id="planner-loading" role="status" aria-live="polite">
+      <strong>OneTrip</strong>
+      <span class="loading-ring" aria-hidden="true"></span>
+      <span>Opening your trip planner…</span>
+    </div>
+    <noscript><style>#planner-loading { display: none; }</style></noscript>
+    <script>
+      (() => {
+        const root = document.getElementById('root');
+        const loading = document.getElementById('planner-loading');
+        const observer = new MutationObserver(() => {
+          if (root.firstElementChild) {
+            loading.hidden = true;
+            observer.disconnect();
+          }
+        });
+        observer.observe(root, { childList: true });
+      })();
+    </script>
   <script src="/planner/_expo/static/js/web/index-a0937a058ceaa5a686b384f848631e4a.js" defer></script>
 </body>
 </html>
